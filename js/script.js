@@ -8,13 +8,13 @@
  */
 function calculate () {
   // input
-  const length = parseInt(document.getElementById('length-of-pyramid').value)
-  const width = parseInt(document.getElementById('width-of-pyramid').value)
-  const height = parseInt(document.getElementById('height-of-pyramid').value)
+  const length = parseFloat(document.getElementById('length-of-pyramid').value)
+  const width = parseFloat(document.getElementById('width-of-pyramid').value)
+  const height = parseFloat(document.getElementById('height-of-pyramid').value)
 
   // process
   const volume = (length * width * height) / 3
 
   // output
-  document.getElementById('volume').innerHTML = 'The volume is: ' + volume + ' mm³'
+  document.getElementById('volume').innerHTML = 'The volume is: ' + volume.toFixed(2) + ' mm³'
 }
